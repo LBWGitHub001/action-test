@@ -40,6 +40,6 @@ jobs:
         branch: gh-pages
         folder: 
           #public
-          #pages
+          pages
           #themes
-          styles
+          #styles
