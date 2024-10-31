@@ -50,7 +50,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: lbwgithub/CKYF-Website:latest
+        tags: lbwgithub/ckyf-website:latest
       
       
       
