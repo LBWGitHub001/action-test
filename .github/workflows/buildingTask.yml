@@ -34,11 +34,6 @@ jobs:
     - name: 项目打包
       run: yarn build
         
-    - name: 部署
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: gh-pages
-        folder: pages
         
     - name: 登录DockerHub
       uses: docker/login-action@v3
