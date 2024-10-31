@@ -24,19 +24,18 @@ jobs:
     runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+    steps:   
+    - name: 读取仓库内容
+      uses: actions/checkout@v4
       
-      - name: 读取仓库内容
-        uses: actions/checkout@v4
+    - name: 安装依赖
+      run: yarn install
       
-      - name: 安装依赖
-        run: yarn install
-      
-      - name: 项目打包
-        run: yarn run build
+    - name: 项目打包
+      run: yarn run build
         
-      name: 部署
-        use: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: build
+    - name: 部署
+      use: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages
+        folder: build
