@@ -40,4 +40,4 @@ jobs:
         branch: gh-pages
         folder: 
           #public
-          page
+          pages
