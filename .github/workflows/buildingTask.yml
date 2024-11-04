@@ -41,7 +41,7 @@ jobs:
       uses: docker/build-push-action@v5
       with:
         push: true
-        tags: lbwgithub/ckyf-website:latest
+        tags:  crpi-frgma9xddzd6cyy7.cn-shanghai.personal.cr.aliyuncs.com/ckyf/website:latest
       
       #1
       
