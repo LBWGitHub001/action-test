@@ -34,6 +34,7 @@ jobs:
     - name: 登录DockerHub
       uses: docker/login-action@v3
       with:
+        registry: crpi-frgma9xddzd6cyy7.cn-shanghai.personal.cr.aliyuncs.com
         username: aliyun0166563566 #${{ secrets.ALIYUN_USERNAME}}
         password: RMnuaa1234 #${{ secrets.ALIYUN_KEY}}
         
