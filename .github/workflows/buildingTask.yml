@@ -35,7 +35,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         username: ${{ secrets.ALIYUN_USERNAME}}
-        password: ${{ secrets.ALIYUN_CRPI}}
+        password: ${{ secrets.ALIYUN_KEY}}
         
     - name: 构建并推送到Docker Hub
       uses: docker/build-push-action@v5
