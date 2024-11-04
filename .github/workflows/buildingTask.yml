@@ -34,8 +34,8 @@ jobs:
     - name: 登录DockerHub
       uses: docker/login-action@v3
       with:
-        username: ${{ secrets.ALIYUN_USERNAME}}
-        password: ${{ secrets.ALIYUN_KEY}}
+        username: aliyun0166563566 #${{ secrets.ALIYUN_USERNAME}}
+        password: RMnuaa1234 #${{ secrets.ALIYUN_KEY}}
         
     - name: 构建并推送到Docker Hub
       uses: docker/build-push-action@v5
